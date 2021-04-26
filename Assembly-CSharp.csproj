@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{24b64800-8dec-9893-cbf5-0a8c517fb495}</ProjectGuid>
+    <ProjectGuid>{dac160e9-b7cc-693a-c10c-ef1e53b1b9b4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraFollowPoint.cs" />
      <Compile Include="Assets\Scripts\CharlieController.cs" />
+     <Compile Include="Assets\Scripts\DELETE_testScript_Niel.cs" />
      <Compile Include="Assets\Scripts\GroundChecker.cs" />
      <Compile Include="Assets\Scripts\LedgeRaycast.cs" />
     <Reference Include="UnityEngine">
@@ -578,55 +579,55 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/Nathan/Downloads/Run Charlie Run 1.0 From Drew/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/Nathan/Desktop/RunCharlieRun/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
