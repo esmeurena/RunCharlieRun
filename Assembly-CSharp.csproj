@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraFollowPoint.cs" />
      <Compile Include="Assets\Scripts\CharlieController.cs" />
+     <Compile Include="Assets\Scripts\DELETE_Script2.cs" />
      <Compile Include="Assets\Scripts\DELETE_testScript_Niel.cs" />
      <Compile Include="Assets\Scripts\GroundChecker.cs" />
      <Compile Include="Assets\Scripts\LedgeRaycast.cs" />
