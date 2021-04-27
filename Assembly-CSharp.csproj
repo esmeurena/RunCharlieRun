@@ -57,6 +57,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraFollowPoint.cs" />
      <Compile Include="Assets\Scripts\CharlieController.cs" />
+     <Compile Include="Assets\Scripts\Cris.cs" />
      <Compile Include="Assets\Scripts\ESMAN.cs" />
      <Compile Include="Assets\Scripts\GroundChecker.cs" />
      <Compile Include="Assets\Scripts\LedgeRaycast.cs" />
