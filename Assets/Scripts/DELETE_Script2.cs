@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DELETE_Script2 : MonoBehaviour
 {
+    //test comment delete1
     // Start is called before the first frame update
     void Start()
     {
