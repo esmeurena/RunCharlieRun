@@ -8,7 +8,7 @@ public class LedgeRaycast : MonoBehaviour
     public bool DisableGrapple = false;
 
     // Update is called once per frame
-    void Update()
+    void Update() 
     {
         if (!DisableGrapple)
         {
