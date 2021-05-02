@@ -21,16 +21,15 @@ public class Menu : MonoBehaviour
         origin_y = Screen.height / 2 - buttonHeight * 2; 
 
     }
-    //remove update function. Will not need it when making selection menu
-    
+
     void OnGUI() 
     {
         GUI.skin = mySkin;
-        if(GUI.Button(new Rect(origin_x, origin_y, buttonWidth, buttonHeight), "Game Scene 1"))
+        if(GUI.Button(new Rect(origin_x, origin_y, buttonWidth, buttonHeight), "Start Game"))
         {
             //load scene 1
-            //Application.LoadLevel(1);    
-            SceneManager.LoadScene(1);
+            Application.LoadLevel(1);    
+            //SceneManager.LoadScene(1);
         }   
         //add more for more scenes
         /*
@@ -49,14 +48,11 @@ public class Menu : MonoBehaviour
         }   
         */
         //Add another button to quit the game
-        if(GUI.Button(new Rect(origin_x, origin_y + buttonHeight * 3 + 60, buttonWidth, buttonHeight), "Quit"))
+        if(GUI.Button(new Rect(origin_x, origin_y + buttonHeight + 20, buttonWidth, buttonHeight), "Quit"))
         {
-            #if UNITY_EDITOR //check whether we're in debug mode
-                UnityEditor.EditorApplication.isPlaying = false; //
-            #else
-                Application.Quit(); //if we're not in debug mode
-                
-            #endif
+            UnityEditor.EditorApplication.isPlaying = false;
+
+            Application.Quit();
         }   
     }
 }
