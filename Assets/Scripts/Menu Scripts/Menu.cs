@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement; //need when Application.LoadLevel is obsolete
 
 
 public class Menu : MonoBehaviour
-{
+{ 
     public int buttonWidth;
     public int buttonHeight;
     private int origin_x;

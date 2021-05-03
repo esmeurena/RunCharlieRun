@@ -60,7 +60,6 @@
      <Compile Include="Assets\Scripts\Controller Scripts\GrabbableCircularObjectScript.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\GrabbableCircularObjectScript1.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\GoBackToMenu.cs" />
-     <Compile Include="Assets\Scripts\Menu Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\Object Scripts\GrabBox.cs" />
      <None Include="Assets\BG Object Packages\Low Poly Trees\LowPolyTreePack\README.txt" />
  <Reference Include="UnityEngine">
