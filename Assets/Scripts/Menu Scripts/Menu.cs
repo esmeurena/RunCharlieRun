@@ -20,7 +20,7 @@ public class Menu : MonoBehaviour
         origin_x = Screen.width / 2 - buttonWidth / 2;
         origin_y = Screen.height / 2 - buttonHeight * 2; 
 
-    }
+    } 
 
     void OnGUI() 
     {
@@ -28,8 +28,8 @@ public class Menu : MonoBehaviour
         if(GUI.Button(new Rect(origin_x, origin_y, buttonWidth, buttonHeight), "Start Game"))
         {
             //load scene 1
-            Application.LoadLevel(1);    
-            //SceneManager.LoadScene(1);
+            //Application.LoadLevel(1);    
+            SceneManager.LoadScene(1);
         }   
         //add more for more scenes
         /*

@@ -307,9 +307,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1107415485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b8ec8121b0ff2d4c8db121f6120b915, type: 3}
+  m_Script: {fileID: 11500000, guid: 644488fc14759e040bc32bd694eaf97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonWidth: 0
+  buttonHeight: 0
   mySkin: {fileID: 0}
 --- !u!114 &1107415489
 MonoBehaviour:
@@ -320,9 +322,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1107415485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 644488fc14759e040bc32bd694eaf97b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b8ec8121b0ff2d4c8db121f6120b915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonWidth: 0
-  buttonHeight: 0
   mySkin: {fileID: 0}
