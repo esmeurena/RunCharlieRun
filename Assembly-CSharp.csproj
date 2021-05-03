@@ -57,11 +57,13 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraFollowPoint.cs" />
      <Compile Include="Assets\Scripts\CharlieController.cs" />
+     <Compile Include="Assets\Scripts\Cris.cs" />
      <Compile Include="Assets\Scripts\ESMAN.cs" />
      <Compile Include="Assets\Scripts\GroundChecker.cs" />
      <Compile Include="Assets\Scripts\LedgeRaycast.cs" />
      <Compile Include="Assets\Scripts\NathanD.cs" />
      <Compile Include="Assets\Scripts\Taylor.cs" />
+     <Compile Include="Assets\Scripts\ThirdPersonController - Copy.cs" />
      <Compile Include="Assets\Scripts\esme.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
