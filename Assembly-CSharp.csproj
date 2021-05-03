@@ -55,10 +55,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Camera Scripts\CameraFollowPoint.cs" />
      <Compile Include="Assets\Scripts\Camera Scripts\CameraFollowing_1.cs" />
+     <Compile Include="Assets\Scripts\Charlie Scripts\CharlieController.cs" />
      <Compile Include="Assets\Scripts\Charlie Scripts\CharlieController1.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\GrabbableCircularObjectScript.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\GrabbableCircularObjectScript1.cs" />
+     <Compile Include="Assets\Scripts\Controller Scripts\ThirdPersonController - Copy.cs" />
+     <Compile Include="Assets\Scripts\GroundChecker.cs" />
+     <Compile Include="Assets\Scripts\LedgeRaycast.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\GoBackToMenu.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\Object Scripts\GrabBox.cs" />
