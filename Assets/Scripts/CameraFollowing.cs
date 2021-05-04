@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollowing : MonoBehaviour
-{
+{ 
     public GameObject PlayerFollowPoint;
     public Vector3 CameraOffset;
 

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharlieController : MonoBehaviour
-{
+public class Test_CharlieController : MonoBehaviour
+{ 
     Rigidbody rb;
     public GroundChecker GCS;
     public LedgeRaycast LRS;

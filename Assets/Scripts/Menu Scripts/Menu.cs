@@ -32,14 +32,14 @@ public class Menu : MonoBehaviour
             SceneManager.LoadScene(1);
         }   
         //add more for more scenes
-        
+        /*
         if(GUI.Button(new Rect(origin_x, origin_y + buttonHeight * 2 + 40, buttonWidth, buttonHeight), "TEST - Stage Room"))
         {
             //load scene 2
             //Application.LoadLevel(2);    
             SceneManager.LoadScene(2);
         }   
-        
+        */
         /*
         if(GUI.Button(new Rect(origin_x, origin_y + buttonHeight * 2 + 40, buttonWidth, buttonHeight), "Scene 3"))
         {
