@@ -21,7 +21,7 @@ public class GrabbableCircularObjectScript1 : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Collider = GetComponent<SphereCollider>();
         ItemHoldingPoint = GameObject.Find("Item Holding Point");
-        CCS = GameObject.Find("Charlie Player").GetComponent<CharlieController1>();
+        CCS = GameObject.Find("Charlie Player 1").GetComponent<CharlieController1>();
     }
 
     void FixedUpdate()
