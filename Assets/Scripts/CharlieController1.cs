@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CharlieController1 : MonoBehaviour
-{
+{ 
     Rigidbody rb;
     public GroundChecker GCS;
     public LedgeRaycast LRS;
     public GrabBox GBS;
+    //private GrabBox GBS;
     //public BoxCollider GroundCheck;
 
     public float moveSpeed;
@@ -28,6 +29,7 @@ public class CharlieController1 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+       // GBS = GameObject.Find("Grab Box").GetComponent<GrabBox>();
     }
 
     // Update is called once per frame

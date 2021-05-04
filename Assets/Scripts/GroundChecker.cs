@@ -12,7 +12,7 @@ public class GroundChecker : MonoBehaviour
         {
             Grounded = true;
         }        
-    }
+    } 
 
     void OnTriggerExit(Collider other)
     {
