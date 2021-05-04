@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Copy_TestRoom_Scene1.unity
     guid: 7764a068ef688c849aa07d377fa33f85
+  - enabled: 1
+    path: Assets/Scenes/StageRoom_Scene.unity
+    guid: 3701e1ea07d0f004e8c2d3e6f6aac8ec
   m_configObjects: {}
