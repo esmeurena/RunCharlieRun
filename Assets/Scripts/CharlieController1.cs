@@ -37,13 +37,13 @@ public class CharlieController1 : MonoBehaviour
 
         if (LRS.Grappling && GCS.Grounded == false)
         {
-            rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationZ;
-
+            rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
+            
             if (Input.GetKeyDown("s"))
             {
                 LRS.Grappling = false;
                 StartCoroutine(DisableGrapple());
-                rb.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+                rb.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionZ;
             }
         }
 
@@ -51,13 +51,13 @@ public class CharlieController1 : MonoBehaviour
         {
             jump = true;
         }
-        if (Input.GetKeyDown(KeyCode.Space) && LRS.Grappling && GCS.Grounded == false)
+        if (Input.GetKeyDown(KeyCode.Space) && LRS.Grappling) //&& GCS.Grounded == false)
         {
             jump = true;
 
             LRS.Grappling = false;
             StartCoroutine(DisableGrapple());
-            rb.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+            rb.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionZ;
         }
         if(Input.GetKeyDown("e") && GBS.SensingEquippable == true && ItemIsLerping == false && Equipped == false)
         {
@@ -102,7 +102,7 @@ public class CharlieController1 : MonoBehaviour
     IEnumerator DisableGrapple()
     {
         LRS.DisableGrapple = true;
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.2f);
         LRS.DisableGrapple = false;
     }
 }
