@@ -42,7 +42,7 @@ public class CharlieController : MonoBehaviour
             {
                 LRS.Grappling = false;
                 StartCoroutine(DisableGrapple());
-                rb.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+                rb.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionZ;
             }
         }
 
