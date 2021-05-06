@@ -8,11 +8,13 @@ public class CharlieController1 : MonoBehaviour
     public GroundChecker GCS;
     public LedgeRaycast LRS;
     public GrabBox GBS;
+    private Rigidbody GTOS;
     //private GrabBox GBS;
     //public BoxCollider GroundCheck;
 
     public float moveSpeed;
     public float jumpForce;
+    public float throwForce;
 
     float horizontal;
 
@@ -22,6 +24,8 @@ public class CharlieController1 : MonoBehaviour
     float smooth = 0.2f;
 
     public bool Equipped = false;
+    public bool ItemIsThrowable = false;
+    public bool ThrowItem = false;
     public bool ItemIsLerping = false;
     public bool StartItemLerp = false;
 
@@ -61,23 +65,48 @@ public class CharlieController1 : MonoBehaviour
             StartCoroutine(DisableGrapple());
             rb.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionZ;
         }
+        if(Equipped == true && ItemIsThrowable == true)
+        {
+            GTOS = GBS.Throwable.GetComponent<Rigidbody>();
+            Debug.Log("WE have a throwable");
+        }
         if(Input.GetKeyDown("e") && GBS.SensingEquippable == true && ItemIsLerping == false && Equipped == false)
         {
             ItemIsLerping = true;
             StartItemLerp = true;
         }
+        if(Input.GetMouseButtonDown(0) && Equipped == true && ItemIsThrowable == true)
+        {
+            ItemIsThrowable = false;
+            Equipped = false;
+            ThrowItem = true;
+        }
         if(Input.GetKeyDown("e") && Equipped == true)
         {
             Equipped = false;
+            if (ItemIsThrowable)
+            {
+                GTOS.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezePositionZ;
+                GTOS = null;
+                Debug.Log(GTOS);
+            }
         }
     }
 
     void FixedUpdate()
     {
-        rb.velocity = new Vector3(horizontal * moveSpeed * Time.deltaTime, rb.velocity.y, 0f);
-
+        if (ThrowItem)
+        {
+            GTOS.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezePositionZ;
+            GTOS.AddForce((transform.right * throwForce + transform.up * throwForce) * Time.deltaTime, ForceMode.Impulse);
+            GTOS = null;
+            ThrowItem = false;
+        }
         if (LRS.Grappling == false)
         {
+            rb.velocity = new Vector3(horizontal * moveSpeed * Time.deltaTime, rb.velocity.y, 0f);
+            rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+           
             if (horizontal > 0 && transform.eulerAngles != new Vector3(0f, 0f, 0f))
             {
                 //Quaternion.Euler(0f, 0f, 0f);
@@ -96,6 +125,7 @@ public class CharlieController1 : MonoBehaviour
 
         if (jump)
         {
+            rb.velocity = new Vector3(rb.velocity.x, 0f, 0f);
             rb.AddForce(new Vector3(0f, jumpForce * Time.deltaTime, 0f),ForceMode.Impulse);
             jump = false;
         }

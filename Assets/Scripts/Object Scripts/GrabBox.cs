@@ -5,6 +5,7 @@ using UnityEngine;
 public class GrabBox : MonoBehaviour
 {
     public bool SensingEquippable = false;
+    public GameObject Throwable;
 
     void OnTriggerEnter(Collider other)
     {
@@ -14,7 +15,8 @@ public class GrabBox : MonoBehaviour
         }    
         if(other.tag == "Throwable")
         {
-
+            SensingEquippable = true;
+            Throwable = other.gameObject;
         }
     }
     
@@ -26,7 +28,8 @@ public class GrabBox : MonoBehaviour
         }
         if(other.tag == "Throwable")
         {
-
+            SensingEquippable = false;
+            Throwable = null;
         }
     }
 }
