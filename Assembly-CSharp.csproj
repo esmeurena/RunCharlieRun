@@ -71,8 +71,11 @@
      <Compile Include="Assets\Scripts\Menu Scripts\GoBackToMenu.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\Object Scripts\GrabBox.cs" />
+     <Compile Include="Assets\Scripts\PlayAgain.cs" />
      <Compile Include="Assets\Scripts\StringRelease.cs" />
+     <Compile Include="Assets\Scripts\Sun.cs" />
      <Compile Include="Assets\Scripts\Test_CharlieController.cs" />
+     <Compile Include="Assets\Scripts\Timer.cs" />
      <None Include="Assets\BG Object Packages\Low Poly Trees\LowPolyTreePack\README.txt" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.18f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
