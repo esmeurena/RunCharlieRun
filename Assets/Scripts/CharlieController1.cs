@@ -68,7 +68,6 @@ public class CharlieController1 : MonoBehaviour
         if(Equipped == true && ItemIsThrowable == true)
         {
             GTOS = GBS.Throwable.GetComponent<Rigidbody>();
-            Debug.Log("WE have a throwable");
         }
         if(Input.GetKeyDown("e") && GBS.SensingEquippable == true && ItemIsLerping == false && Equipped == false)
         {
