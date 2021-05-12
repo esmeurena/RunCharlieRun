@@ -53,5 +53,7 @@ public class CameraFollowing : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         NewTarget = true;
+        yield return new WaitForSeconds(8f);
+        Application.LoadLevel("MenuScene");
     }
 }

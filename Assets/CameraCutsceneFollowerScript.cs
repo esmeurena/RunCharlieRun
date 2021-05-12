@@ -15,7 +15,7 @@ public class CameraCutsceneFollowerScript : MonoBehaviour
         if (CFS.NewTarget)
         {
             transform.position = Vector3.Lerp(Player.transform.position, CutsceneTarget.transform.position, timeElapsed);
-            if (timeElapsed < .5f)
+            if (timeElapsed < 1f)
                 timeElapsed = timeElapsed + Time.deltaTime * .05f;
         }
         else
