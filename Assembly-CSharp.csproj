@@ -66,6 +66,7 @@
     <Compile Include="Assets\BeginningFallColliderScript.cs" />
     <Compile Include="Assets\CameraCutsceneFollowerScript.cs" />
     <Compile Include="Assets\CutsceneToLevel2Collider.cs" />
+    <Compile Include="Assets\EndingFallColliderScript.cs" />
     <Compile Include="Assets\Scripts\Camera Scripts\CameraFollowPoint.cs" />
     <Compile Include="Assets\Scripts\Camera Scripts\CameraFollowing_1.cs" />
     <Compile Include="Assets\Scripts\CameraFollowing.cs" />
