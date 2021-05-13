@@ -27,6 +27,7 @@ public class CharlieController1 : MonoBehaviour
     public bool ThrowItem = false;
     public bool ItemIsLerping = false;
     public bool StartItemLerp = false;
+    public bool DisabledMovement = false;
 
     bool Paused = false;
     bool Called = false;
@@ -41,60 +42,68 @@ public class CharlieController1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!CTL2CS.LoadNextLevel)
+        if (!DisabledMovement)
         {
-            horizontal = Input.GetAxisRaw("Horizontal");
-
-            if (LRS.Grappling && GCS.Grounded == false)
+            if (!CTL2CS.LoadNextLevel)
             {
-                rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
+                horizontal = Input.GetAxisRaw("Horizontal");
 
-                if (Input.GetKeyDown("s"))
+                if (LRS.Grappling && GCS.Grounded == false)
                 {
+                    rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
+
+                    if (Input.GetKeyDown("s"))
+                    {
+                        LRS.Grappling = false;
+                        StartCoroutine(DisableGrapple());
+                        rb.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionZ;
+                    }
+                }
+
+                if (Input.GetKeyDown(KeyCode.Space) && GCS.Grounded)
+                {
+                    jump = true;
+                }
+                if (Input.GetKeyDown(KeyCode.Space) && LRS.Grappling) //&& GCS.Grounded == false)
+                {
+                    jump = true;
+
                     LRS.Grappling = false;
                     StartCoroutine(DisableGrapple());
                     rb.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionZ;
                 }
-            }
-
-            if (Input.GetKeyDown(KeyCode.Space) && GCS.Grounded)
-            {
-                jump = true;
-            }
-            if (Input.GetKeyDown(KeyCode.Space) && LRS.Grappling) //&& GCS.Grounded == false)
-            {
-                jump = true;
-
-                LRS.Grappling = false;
-                StartCoroutine(DisableGrapple());
-                rb.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionZ;
-            }
-            if (Equipped == true && ItemIsThrowable == true)
-            {
-                GTOS = GBS.Throwable.GetComponent<Rigidbody>();
-            }
-            if (Input.GetKeyDown("e") && GBS.SensingEquippable == true && ItemIsLerping == false && Equipped == false)
-            {
-                ItemIsLerping = true;
-                StartItemLerp = true;
-            }
-            if (Input.GetMouseButtonDown(0) && Equipped == true && ItemIsThrowable == true)
-            {
-                ItemIsThrowable = false;
-                Equipped = false;
-                ThrowItem = true;
-            }
-            if (Input.GetKeyDown("e") && Equipped == true)
-            {
-                Equipped = false;
-                if (ItemIsThrowable)
+                if (Equipped == true && ItemIsThrowable == true)
                 {
-                    GTOS.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezePositionZ;
-                    GTOS = null;
-                    Debug.Log(GTOS);
+                    GTOS = GBS.Throwable.GetComponent<Rigidbody>();
+                }
+                if (Input.GetKeyDown("e") && GBS.SensingEquippable == true && ItemIsLerping == false && Equipped == false)
+                {
+                    ItemIsLerping = true;
+                    StartItemLerp = true;
+                }
+                if (Input.GetMouseButtonDown(0) && Equipped == true && ItemIsThrowable == true)
+                {
+                    ItemIsThrowable = false;
+                    Equipped = false;
+                    ThrowItem = true;
+                }
+                if (Input.GetKeyDown("e") && Equipped == true)
+                {
+                    Equipped = false;
+                    if (ItemIsThrowable)
+                    {
+                        GTOS.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezePositionZ;
+                        GTOS = null;
+                        Debug.Log(GTOS);
+                    }
                 }
             }
         }
+        else
+        {
+            rb.velocity = new Vector3(0f, -9.81f, 0f);
+        }
+        
     }
 
     void FixedUpdate()
