@@ -36,16 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-<<<<<<< HEAD
      <Compile Include="Assets\BeginningFallColliderScript.cs" />
      <Compile Include="Assets\CameraCutsceneFollowerScript.cs" />
      <Compile Include="Assets\CutsceneToLevel2Collider.cs" />
      <Compile Include="Assets\EndingFallColliderScript.cs" />
-=======
-     <Compile Include="Assets\CameraCutsceneFollowerScript.cs" />
-     <Compile Include="Assets\CutsceneToLevel2Collider.cs" />
      <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
->>>>>>> mainCOPYCOPY
      <Compile Include="Assets\Scripts\Camera Scripts\CameraFollowPoint.cs" />
      <Compile Include="Assets\Scripts\Camera Scripts\CameraFollowing_1.cs" />
      <Compile Include="Assets\Scripts\CameraFollowing.cs" />
