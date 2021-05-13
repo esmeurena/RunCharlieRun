@@ -1,6 +1,12 @@
 fileFormatVersion: 2
-guid: d05c2a17c041449489ae9a489bbea8d4
+<<<<<<< HEAD:Assets/Prefabs/Drew's Folder of Random Shit/Camera Cutscene Follower.prefab.meta
+guid: 6fc0815cec688114c85e0614a8883283
 PrefabImporter:
+=======
+guid: 91e0902123fa37b4085fc44b36000495
+folderAsset: yes
+DefaultImporter:
+>>>>>>> mainCOPYCOPY:Assets/LowPolyWater_Pack/New Prefabs.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
