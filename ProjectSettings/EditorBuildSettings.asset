@@ -4,5 +4,21 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_Scenes: []
+=======
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: 66bf2d0e58c583740bfba663b768ab35
+  - enabled: 1
+    path: Assets/Scenes/Level1 - Copy - Copy.unity
+    guid: b8163e64c7167c447990b55395d13098
+  - enabled: 0
+    path: Assets/Scenes/Copy_TestRoom_Scene1.unity
+    guid: 7764a068ef688c849aa07d377fa33f85
+  - enabled: 0
+    path: Assets/Scenes/StageRoom_Scene.unity
+    guid: 3701e1ea07d0f004e8c2d3e6f6aac8ec
+>>>>>>> mainCOPY
   m_configObjects: {}
