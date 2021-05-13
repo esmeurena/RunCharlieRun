@@ -36,10 +36,16 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< HEAD
      <Compile Include="Assets\BeginningFallColliderScript.cs" />
      <Compile Include="Assets\CameraCutsceneFollowerScript.cs" />
      <Compile Include="Assets\CutsceneToLevel2Collider.cs" />
      <Compile Include="Assets\EndingFallColliderScript.cs" />
+=======
+     <Compile Include="Assets\CameraCutsceneFollowerScript.cs" />
+     <Compile Include="Assets\CutsceneToLevel2Collider.cs" />
+     <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+>>>>>>> mainCOPYCOPY
      <Compile Include="Assets\Scripts\Camera Scripts\CameraFollowPoint.cs" />
      <Compile Include="Assets\Scripts\Camera Scripts\CameraFollowing_1.cs" />
      <Compile Include="Assets\Scripts\CameraFollowing.cs" />
@@ -158,9 +164,11 @@
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Resources\Shaders\TAA.cginc" />
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+     <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+     <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Resources\Shaders\ACES.cginc" />
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
