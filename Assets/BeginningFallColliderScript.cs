@@ -12,4 +12,4 @@ public class BeginningFallColliderScript : MonoBehaviour
         if(other.tag == "Player")
             CC1S.DisabledMovement = true;
     }
-}
+} 

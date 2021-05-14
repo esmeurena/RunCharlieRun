@@ -3116,6 +3116,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Charlie Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8443213338505748672, guid: 8d08afac6950b954c9686223883c1ebc,
+        type: 3}
+      propertyPath: CTL2CS
+      value: 
+      objectReference: {fileID: 2177952242549027981, guid: a77ef35e91150614b8f636ebcbe65b12,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d08afac6950b954c9686223883c1ebc, type: 3}
 --- !u!4 &158361490 stripped
@@ -3662,6 +3668,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8233162566018114392, guid: a6aa881a23b7f9d439934da956d82d5f,
+        type: 3}
+      propertyPath: CTL2CS
+      value: 
+      objectReference: {fileID: 2177952242549027981, guid: a77ef35e91150614b8f636ebcbe65b12,
+        type: 3}
+    - target: {fileID: 8233162566018114392, guid: a6aa881a23b7f9d439934da956d82d5f,
+        type: 3}
+      propertyPath: CutsceneTarget
+      value: 
+      objectReference: {fileID: 3397218941122982375, guid: 6fc0815cec688114c85e0614a8883283,
+        type: 3}
     - target: {fileID: 8233162566018114392, guid: a6aa881a23b7f9d439934da956d82d5f,
         type: 3}
       propertyPath: PlayerFollowPoint
@@ -78540,6 +78558,7 @@ MonoBehaviour:
   GCS: {fileID: 883631222}
   LRS: {fileID: 444782234}
   GBS: {fileID: 0}
+  CTL2CS: {fileID: 0}
   moveSpeed: 200
   jumpForce: 350
   throwForce: 0
@@ -78548,6 +78567,7 @@ MonoBehaviour:
   ThrowItem: 0
   ItemIsLerping: 0
   StartItemLerp: 0
+  DisabledMovement: 0
 --- !u!1001 &1387971897
 PrefabInstance:
   m_ObjectHideFlags: 0
