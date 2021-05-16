@@ -64,7 +64,7 @@ public class CharlieController1 : MonoBehaviour
                 {
                     jump = true;
                 }
-                if (Input.GetKeyDown(KeyCode.Space) && LRS.Grappling) //&& GCS.Grounded == false)
+                if (Input.GetKeyDown(KeyCode.Space) && LRS.Grappling)
                 {
                     jump = true;
 
