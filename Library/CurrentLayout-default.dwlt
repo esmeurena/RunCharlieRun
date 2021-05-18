@@ -20,8 +20,18 @@ MonoBehaviour:
     height: 997
   m_ShowMode: 4
   m_Title: 
+<<<<<<< HEAD
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 542}
+=======
+<<<<<<< HEAD
+  m_RootView: {fileID: 3}
+  m_MinSize: {x: 875, y: 542}
+=======
+  m_RootView: {fileID: 7}
+  m_MinSize: {x: 875, y: 300}
+>>>>>>> taylor_test
+>>>>>>> mainCOPY
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -33,6 +43,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> mainCOPY
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: AnimatorControllerTool
   m_EditorClassIdentifier: 
@@ -136,6 +151,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
+=======
+>>>>>>> taylor_test
+>>>>>>> mainCOPY
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -170,9 +189,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1920
     height: 997
   m_MinSize: {x: 875, y: 542}
+=======
+<<<<<<< HEAD
+    width: 1904
+    height: 981
+  m_MinSize: {x: 875, y: 542}
+=======
+    width: 1920
+    height: 997
+  m_MinSize: {x: 875, y: 300}
+>>>>>>> taylor_test
+>>>>>>> mainCOPY
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &8
 MonoBehaviour:
@@ -237,6 +268,43 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    width: 1904
+    height: 931
+  m_MinSize: {x: 709, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
+  vertical: 0
+  controlID: 16
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 8}
+  - {fileID: 9}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 231
+    height: 931
+  m_MinSize: {x: 231, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 122
+--- !u!114 &8
+=======
+>>>>>>> mainCOPY
     width: 1920
     height: 947
   m_MinSize: {x: 709, y: 492}
@@ -244,6 +312,10 @@ MonoBehaviour:
   vertical: 0
   controlID: 43
 --- !u!114 &11
+<<<<<<< HEAD
+=======
+>>>>>>> taylor_test
+>>>>>>> mainCOPY
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,11 +332,26 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    width: 231
+    height: 473
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
+=======
+>>>>>>> mainCOPY
     width: 430
     height: 947
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
+<<<<<<< HEAD
   m_ActualView: {fileID: 17}
+=======
+  m_ActualView: {fileID: 16}
+>>>>>>> taylor_test
+>>>>>>> mainCOPY
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
@@ -315,11 +402,26 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    width: 1226
+    height: 931
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 15}
+=======
+>>>>>>> mainCOPY
     width: 452
     height: 528
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
+<<<<<<< HEAD
   m_ActualView: {fileID: 22}
+=======
+  m_ActualView: {fileID: 21}
+>>>>>>> taylor_test
+>>>>>>> mainCOPY
   m_Panes:
   - {fileID: 22}
   - {fileID: 23}
@@ -429,10 +531,24 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 131}
     m_SelectedIDs: 54470000
     m_LastClickedID: 18260
     m_ExpandedIDs: 00000000504600005246000056460000584600005a46000060460000ce4600000447000000ca9a3b
+=======
+<<<<<<< HEAD
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: ec3b0000
+    m_LastClickedID: 15340
+    m_ExpandedIDs: 00000000ec3b0000ee3b0000
+=======
+    scrollPos: {x: 0, y: 120}
+    m_SelectedIDs: 22460000
+    m_LastClickedID: 17954
+    m_ExpandedIDs: 000000008c4500008e45000090450000924500009445000096450000984500009a4500009c450000ee45000000ca9a3b
+>>>>>>> taylor_test
+>>>>>>> mainCOPY
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -460,7 +576,15 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 64fbffff
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000050460000524600005446000056460000584600005a4600005c4600005e46000060460000
+=======
+<<<<<<< HEAD
+    m_ExpandedIDs: 00000000ec3b0000ee3b0000
+=======
+    m_ExpandedIDs: 000000008c4500008e45000090450000924500009445000096450000984500009a4500009c450000
+>>>>>>> taylor_test
+>>>>>>> mainCOPY
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -487,8 +611,17 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000000000002c4700004e5d00004a5d0000465d0000
+=======
+    m_HadKeyboardFocusLastEvent: 0
+<<<<<<< HEAD
+    m_ExpandedInstanceIDs: c6230000000000002c470000
+=======
+    m_ExpandedInstanceIDs: c6230000000000002c4700004e5d00004a5d0000465d0000
+>>>>>>> taylor_test
+>>>>>>> mainCOPY
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -547,7 +680,15 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: f091ffff8eeaffff04ebffff10f2ffff5afbffff
+=======
+<<<<<<< HEAD
+      m_ExpandedIDs: 62fbffff
+=======
+      m_ExpandedIDs: 66fbffff
+>>>>>>> taylor_test
+>>>>>>> mainCOPY
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -633,9 +774,21 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -95.48668, y: -27.432383, z: 194.82187}
     speed: 2
     m_Value: {x: -95.48668, y: -27.432383, z: 194.82187}
+=======
+<<<<<<< HEAD
+    m_Target: {x: -1.1348748, y: 2.8681898, z: 1.2489643}
+    speed: 2
+    m_Value: {x: -1.1348748, y: 2.8681898, z: 1.2489643}
+=======
+    m_Target: {x: 45.648834, y: -29.646244, z: 177.37605}
+    speed: 2
+    m_Value: {x: 45.648834, y: -29.646244, z: 177.37605}
+>>>>>>> taylor_test
+>>>>>>> mainCOPY
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -681,13 +834,33 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.11931917, y: 0.19100565, z: -0.023017645, w: 0.9741092}
+=======
+<<<<<<< HEAD
+    m_Target: {x: 0.112540275, y: 0.02384469, z: -0.0026723463, w: 0.99337584}
+>>>>>>> mainCOPY
     speed: 2
     m_Value: {x: 0.11931091, y: 0.19099241, z: -0.02301605, w: 0.9740417}
   m_Size:
+<<<<<<< HEAD
     m_Target: 137.56352
     speed: 2
     m_Value: 137.56352
+=======
+    m_Target: 14.985637
+    speed: 2
+    m_Value: 15.691766
+=======
+    m_Target: {x: 0.119970076, y: 0.03437205, z: -0.003765473, w: 0.9922374}
+    speed: 2
+    m_Value: {x: 0.11995689, y: 0.035858154, z: -0.00394518, w: 0.9921234}
+  m_Size:
+    m_Target: 129.58685
+    speed: 2
+    m_Value: 135.69304
+>>>>>>> taylor_test
+>>>>>>> mainCOPY
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -781,21 +954,51 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
+<<<<<<< HEAD
       y: 21
+=======
+<<<<<<< HEAD
+      y: 21
+      width: 1224
+      height: 889
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 612, y: 444.5}
+=======
+      y: 0
+>>>>>>> mainCOPY
       width: 1036
       height: 634
     m_Scale: {x: 1, y: 1}
+<<<<<<< HEAD
     m_Translation: {x: 518, y: 317}
+=======
+    m_Translation: {x: 518, y: 327.5}
+>>>>>>> taylor_test
+>>>>>>> mainCOPY
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      x: -612
+      y: -444.5
+      width: 1224
+      height: 889
+=======
+>>>>>>> mainCOPY
       x: -518
       y: -317
       width: 1036
+<<<<<<< HEAD
       height: 634
+=======
+      height: 655
+>>>>>>> taylor_test
+>>>>>>> mainCOPY
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1036, y: 655}
