@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChaseScript : MonoBehaviour
 {
@@ -8,12 +9,32 @@ public class ChaseScript : MonoBehaviour
     public float ChaseSpeed;
     public bool PlayerFound = false;
 
+    public float xOffset;
+    public float yOffset;
+    public float zOffset;
+
+    private GameMasterScript GMS;
+
+    void Start()
+    {
+        GMS = GameObject.Find("Game Master").GetComponent<GameMasterScript>();
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
         if (PlayerFound)
         {
-            transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, ChaseSpeed);
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(Player.transform.position.x + xOffset, Player.transform.position.y + yOffset, Player.transform.position.z + zOffset), ChaseSpeed);
+            transform.LookAt(Player.transform.position);
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.tag == "Player")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
