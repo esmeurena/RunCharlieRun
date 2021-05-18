@@ -12,7 +12,6 @@ public class EndingFallColliderScript : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            Debug.Log("Player has entered the ending box");
             CC1S.DisabledMovement = false;
             StartCoroutine("DisableLedgeRaycast");
             StartCoroutine("DestroyBackgroundEnemies");

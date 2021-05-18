@@ -69973,7 +69973,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 926519103}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -70052,7 +70052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 2089586845}
-  ChaseSpeed: 0.05
+  ChaseSpeed: 0.04
   PlayerFound: 0
   xOffset: 0
   yOffset: 3
@@ -75315,7 +75315,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1008266887}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -104297,7 +104297,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1446978490}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -134102,7 +134102,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1921132452}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -134181,7 +134181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 2089586845}
-  ChaseSpeed: 0.04
+  ChaseSpeed: 0.03
   PlayerFound: 0
   xOffset: 4
   yOffset: 3
