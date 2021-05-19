@@ -49,6 +49,7 @@
      <Compile Include="Assets\GameMasterScript.cs" />
      <Compile Include="Assets\HitTheLightsColliderScript.cs" />
      <Compile Include="Assets\KillGhostColliderScipt.cs" />
+     <Compile Include="Assets\LevelSelector.cs" />
      <Compile Include="Assets\LevitateScript.cs" />
      <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
      <Compile Include="Assets\PlayerCheckpointPositionScript.cs" />
@@ -68,6 +69,7 @@
      <Compile Include="Assets\Scripts\LedgeRaycast.cs" />
      <Compile Include="Assets\Scripts\LedgeRaycastChecker.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\GoBackToMenu.cs" />
+     <Compile Include="Assets\Scripts\Menu Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\Object Scripts\GrabBox.cs" />
      <Compile Include="Assets\Scripts\ShadowCreatureAI.cs" />
      <Compile Include="Assets\Scripts\StringRelease.cs" />
