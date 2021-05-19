@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Prefabs/Drew's Folder of Random Shit/Character Animator.controller.meta
 guid: 27a1816ba835d3b4fa3e348bc9bd5e48
 NativeFormatImporter:
+=======
+guid: 2313e95206b4fb04db689b683e6a16fc
+folderAsset: yes
+DefaultImporter:
+>>>>>>> nate_test:Assets/Prefabs/CharlieComponents.meta
   externalObjects: {}
   mainObjectFileID: 0
   userData: 
