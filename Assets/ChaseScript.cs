@@ -34,7 +34,8 @@ public class ChaseScript : MonoBehaviour
     {
         if(collision.collider.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            if(PlayerFound)
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
