@@ -6,29 +6,47 @@ public class LedgeRaycast : MonoBehaviour
 {
     public bool Grappling = false;
     public bool DisableGrapple = false;
+    public bool OutsideDisable = false;
+
+    public GameObject Player;
+    public LayerMask Ignored;
+    private float hitPointY;
+    //private float hitPointX;
 
     // Update is called once per frame
-    void Update()
+    void Update() 
     {
-        if (!DisableGrapple)
+        if (!OutsideDisable)
         {
-            RaycastHit hitPoint;
-            if (Physics.Raycast(transform.position, transform.right, out hitPoint, 1f))
+            if (!DisableGrapple)
             {
-                if (hitPoint.normal.y > .9f)
+                RaycastHit hitPoint;
+                if (Physics.Raycast(transform.position, transform.right, out hitPoint, 1f, ~Ignored))
                 {
-                    Grappling = true;
-                    Debug.Log("we are sensing the ledge");
+                    if (hitPoint.normal.y > .9f)
+                    {
+                        Grappling = true;
+                        hitPointY = hitPoint.point.y;
+                        //hitPointX = hitPoint.point.x;
+                    }
+                    else
+                    {
+                        Grappling = false;
+                    }
                 }
                 else
                 {
                     Grappling = false;
                 }
             }
-            else
-            {
-                Grappling = false;
-            }
         }
+    }
+
+    void FixedUpdate()
+    {
+        if (Grappling)
+        {
+            Player.transform.position = new Vector3(Player.transform.position.x, hitPointY - 1f, Player.transform.position.z);
+        }    
     }
 }
