@@ -2,13 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-<<<<<<< HEAD:Assets/Scripts/CharlieController.cs
-public class CharlieController : MonoBehaviour
-{
-=======
 public class Test_CharlieController : MonoBehaviour
 { 
->>>>>>> mainCOPY:Assets/Scripts/Test_CharlieController.cs
     Rigidbody rb;
     public GroundChecker GCS;
     public LedgeRaycast LRS;

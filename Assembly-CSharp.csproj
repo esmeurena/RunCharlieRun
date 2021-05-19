@@ -72,12 +72,11 @@
      <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
      <Compile Include="Assets\PlayerCheckpointPositionScript.cs" />
      <Compile Include="Assets\RisingDoor.cs" />
-     <Compile Include="Assets\Scripts\Camera Scripts\CameraFollowPoint.cs" />
-     <Compile Include="Assets\Scripts\Camera Scripts\CameraFollowing_1.cs" />
+     <Compile Include="Assets\Scripts\CameraFollowPoint.cs" />
      <Compile Include="Assets\Scripts\CameraFollowing.cs" />
      <Compile Include="Assets\Scripts\CharlieController1.cs" />
-     <Compile Include="Assets\Scripts\Controller Scripts\GrabbableCircularObjectScript.cs" />
-     <Compile Include="Assets\Scripts\Controller Scripts\ThirdPersonController - Copy.cs" />
+     <Compile Include="Assets\Scripts\Cris.cs" />
+     <Compile Include="Assets\Scripts\ESMAN.cs" />
      <Compile Include="Assets\Scripts\FallingWood.cs" />
      <Compile Include="Assets\Scripts\GateScript.cs" />
      <Compile Include="Assets\Scripts\GrabbableCircularObjectScript1.cs" />
@@ -86,13 +85,16 @@
      <Compile Include="Assets\Scripts\GroundChecker.cs" />
      <Compile Include="Assets\Scripts\LedgeRaycast.cs" />
      <Compile Include="Assets\Scripts\LedgeRaycastChecker.cs" />
-     <Compile Include="Assets\Scripts\Menu Scripts\GoBackToMenu.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\NathanD.cs" />
      <Compile Include="Assets\Scripts\Object Scripts\GrabBox.cs" />
      <Compile Include="Assets\Scripts\ShadowCreatureAI.cs" />
      <Compile Include="Assets\Scripts\StringRelease.cs" />
+     <Compile Include="Assets\Scripts\Taylor.cs" />
      <Compile Include="Assets\Scripts\Test_CharlieController.cs" />
+     <Compile Include="Assets\Scripts\ThirdPersonController - Copy.cs" />
      <Compile Include="Assets\Scripts\ThrowArrowIndicatorScript.cs" />
+     <Compile Include="Assets\Scripts\esme.cs" />
      <Compile Include="Assets\StaringScript.cs" />
      <Compile Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
@@ -204,7 +206,6 @@
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Resources\Shaders\Fog.shader" />
-     <None Include="Assets\BG Object Packages\Low Poly Trees\LowPolyTreePack\README.txt" />
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Resources\Shaders\MotionBlur.shader" />
      <None Include="Assets\VIRTI\VOXEL-Forniture-FREE\Example\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
@@ -751,55 +752,55 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Cinemachine">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProGrids">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.Editor">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProGrids.Editor">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.cinemachine.editor">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/tfern/OneDrive/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/esmeu/Documents/GitHub/RunCharlieRun/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
