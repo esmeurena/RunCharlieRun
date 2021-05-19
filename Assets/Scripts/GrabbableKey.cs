@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class GrabbableKey : MonoBehaviour
 {
-    private CharlieController1 CCS;
+    //private CharlieController1 CCS;
     private Rigidbody rb;
     private MeshCollider Collider;
+
+    public CharlieController1 CCS;
 
     public bool Equipped = false;
 
@@ -21,7 +23,6 @@ public class GrabbableKey : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Collider = GetComponent<MeshCollider>();
         ItemHoldingPoint = GameObject.Find("Item Holding Point");
-        CCS = GameObject.Find("Charlie Player 1").GetComponent<CharlieController1>();
     }
 
     void FixedUpdate()
