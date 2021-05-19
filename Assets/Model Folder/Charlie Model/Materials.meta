@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Model Folder/Charlie Model/Materials.meta
 guid: 78acb8cdc817f8848896e5f48a8cd241
+=======
+guid: ecde9a2f2b74a0244b3f6c360fde77de
+>>>>>>> drew_test:Assets/Prefabs/Drew's Folder of Random Shit/Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

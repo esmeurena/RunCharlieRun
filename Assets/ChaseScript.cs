@@ -23,10 +23,10 @@ public class ChaseScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        transform.LookAt(Player.transform.position);
         if (PlayerFound)
         {
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(Player.transform.position.x + xOffset, Player.transform.position.y + yOffset, Player.transform.position.z + zOffset), ChaseSpeed);
-            transform.LookAt(Player.transform.position);
         }
     }
 
@@ -34,7 +34,8 @@ public class ChaseScript : MonoBehaviour
     {
         if(collision.collider.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            if(PlayerFound)
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

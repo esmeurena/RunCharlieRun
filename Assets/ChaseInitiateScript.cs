@@ -5,12 +5,16 @@ using UnityEngine;
 public class ChaseInitiateScript : MonoBehaviour
 {
     public ChaseScript CS;
+    public ChaseVariantScript CVS;
 
     void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
         {
-            CS.PlayerFound = true;
+            if(CS != null)
+                CS.PlayerFound = true;
+            if (CVS != null)
+                CVS.PlayerFound = true;
         }    
     }
 }
