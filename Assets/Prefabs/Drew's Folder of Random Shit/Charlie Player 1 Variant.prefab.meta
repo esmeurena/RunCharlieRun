@@ -1,6 +1,12 @@
 fileFormatVersion: 2
-guid: e5ae683dfc9b07b43800a83d23d11c08
+<<<<<<< HEAD:Assets/Prefabs/Drew's Folder of Random Shit/Charlie Player 1 Variant.prefab.meta
+guid: bbc235ed59d8b6f4791c57bd882eb9f1
 PrefabImporter:
+=======
+guid: 61862b8b8ba65b248b963761cb096cfa
+folderAsset: yes
+DefaultImporter:
+>>>>>>> mainCOPYCOPY:Assets/Materials.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
