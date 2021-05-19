@@ -67,6 +67,7 @@
     <Compile Include="Assets\CameraCutsceneFollowerScript.cs" />
     <Compile Include="Assets\ChaseInitiateScript.cs" />
     <Compile Include="Assets\ChaseScript.cs" />
+    <Compile Include="Assets\ChaseVariantScript.cs" />
     <Compile Include="Assets\CheckpointScript.cs" />
     <Compile Include="Assets\CutsceneToLevel2Collider.cs" />
     <Compile Include="Assets\DoorTrigger.cs" />

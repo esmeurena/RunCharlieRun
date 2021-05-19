@@ -10,6 +10,7 @@ public class CharlieController1 : MonoBehaviour
     public GrabBox GBS;
     private Rigidbody GTOS;
     public CutsceneToLevel2Collider CTL2CS;
+    public Animator Animator;
 
     public float moveSpeed;
     public float jumpForce;
@@ -36,6 +37,7 @@ public class CharlieController1 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        ChangeToIdle();
        // GBS = GameObject.Find("Grab Box").GetComponent<GrabBox>();
     }
 
@@ -108,6 +110,19 @@ public class CharlieController1 : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(rb.velocity == new Vector3(0f, 0f, 0f))
+        {
+            ChangeToIdle();
+        }
+        if(!jump && rb.velocity.x > 0.1f || !jump && rb.velocity.x < -0.1f)
+        {
+            ChangeToRun();
+        }
+        if(jump && rb.velocity.y > 0.1f)
+        {
+            ChangeToJump();
+        }
+
         if (ThrowItem)
         {
             GTOS.constraints = RigidbodyConstraints.None | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezePositionZ;
@@ -170,4 +185,27 @@ public class CharlieController1 : MonoBehaviour
         yield return new WaitForSeconds(8f);
         Paused = true;
     }
+    
+    void ChangeToIdle()
+    {
+        Animator.SetBool("IsIdling", true);
+        Animator.SetBool("IsJumping", false);
+        Animator.SetBool("IsRunning", false);
+    }
+
+    void ChangeToRun()
+    {
+        Animator.SetBool("IsIdling", false);
+        Animator.SetBool("IsJumping", false);
+        Animator.SetBool("IsRunning", true);
+    }
+
+    void ChangeToJump()
+    {
+        Animator.SetBool("IsIdling", false);
+        Animator.SetBool("IsJumping", true);
+        Animator.SetBool("IsRunning", false);
+    }
 }
+
+
