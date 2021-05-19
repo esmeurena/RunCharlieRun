@@ -27,8 +27,7 @@ public class Menu : MonoBehaviour
         GUI.skin = mySkin;
         if(GUI.Button(new Rect(origin_x, origin_y, buttonWidth, buttonHeight), "Start Game"))
         {
-            //load scene 1
-            //Application.LoadLevel(1);    
+            //load scene 1   
             SceneManager.LoadScene(1);
         }   
         //add more for more scenes
