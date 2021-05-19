@@ -38,8 +38,6 @@
   <ItemGroup>
      <Compile Include="Assets\BeginningFallColliderScript.cs" />
      <Compile Include="Assets\CameraCutsceneFollowerScript.cs" />
-     <Compile Include="Assets\ChaseInitiateScript.cs" />
-     <Compile Include="Assets\ChaseScript.cs" />
      <Compile Include="Assets\CheckpointScript.cs" />
      <Compile Include="Assets\CutsceneToLevel2Collider.cs" />
      <Compile Include="Assets\DoorTrigger.cs" />
@@ -48,6 +46,7 @@
      <Compile Include="Assets\GameMasterScript.cs" />
      <Compile Include="Assets\HitTheLightsColliderScript.cs" />
      <Compile Include="Assets\KillGhostColliderScipt.cs" />
+     <Compile Include="Assets\LevelSelector.cs" />
      <Compile Include="Assets\LevitateScript.cs" />
      <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
      <Compile Include="Assets\PlayerCheckpointPositionScript.cs" />
@@ -55,7 +54,6 @@
      <Compile Include="Assets\Scripts\Camera Scripts\CameraFollowPoint.cs" />
      <Compile Include="Assets\Scripts\Camera Scripts\CameraFollowing_1.cs" />
      <Compile Include="Assets\Scripts\CameraFollowing.cs" />
-     <Compile Include="Assets\Scripts\CharlieController1.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\GrabbableCircularObjectScript.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\ThirdPersonController - Copy.cs" />
      <Compile Include="Assets\Scripts\FallingWood.cs" />
@@ -67,6 +65,7 @@
      <Compile Include="Assets\Scripts\LedgeRaycast.cs" />
      <Compile Include="Assets\Scripts\LedgeRaycastChecker.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\GoBackToMenu.cs" />
+     <Compile Include="Assets\Scripts\Menu Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\Object Scripts\GrabBox.cs" />
      <Compile Include="Assets\Scripts\RestartLevelOnCollision.cs" />
      <Compile Include="Assets\Scripts\ShadowCreatureAI.cs" />
